@@ -26,20 +26,10 @@ source venv/bin/activate
 venv\Scripts\activate.bat
 pip install -r requirements.txt
 
-
-
-⸻
-
 🚀 Usage
 	1.	Place dataset.csv in the project root.
 	2.	Launch Jupyter Lab
-
-jupyter lab
-
-
 	3.	Open attrition_model.ipynb and run every cell top-to-bottom.
-
-⸻
 
 🗂️ Project Structure
 
@@ -47,10 +37,6 @@ employee-attrition-ml/
 ├── dataset.csv
 ├── requirements.txt
 └── attrition_model.ipynb
-
-
-
-⸻
 
 🔑 Key Steps
 	1.	EDA – histograms, boxplots, count plots ⇒ class imbalance ≈ 24 % “Left”.
@@ -74,22 +60,9 @@ Recall (Left)	0.980
 F₁ (Left)	0.986
 Accuracy	0.993
 
-
-
-⸻
-
 📌 Findings & Recommendations
 	•	Drivers: low satisfaction, 3–5 yr tenure, heavy workload, low evaluation score.
 	•	Actions: targeted engagement surveys, workload caps, mid-tenure mentorship, performance coaching.
-
-⸻
-
-⏭️ Next Steps
-	1.	Deploy as an HR dashboard (FastAPI + joblib).
-	2.	Monitor drift quarterly; retrain as needed.
-	3.	Add new data sources & SHAP explainability.
-
-⸻
 
 📝 License
 
