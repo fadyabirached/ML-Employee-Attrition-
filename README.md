@@ -35,7 +35,6 @@ pip install -r requirements.txt
 
 employee-attrition-ml/
 ├── dataset.csv
-├── requirements.txt
 └── attrition_model.ipynb
 
 🔑 Key Steps
