@@ -4,6 +4,8 @@ A leak-proof pipeline that flags employees at risk of leaving, so HR can act ear
 
 I refined the dataset and systematically experimented with multiple model architectures and decision thresholds, iteratively tuning hyper-parameters to identify the best-performing model for this task.
 
+Every detail about the work is documented in the notebook.
+
 ---
 
 ## 📊 Dataset
