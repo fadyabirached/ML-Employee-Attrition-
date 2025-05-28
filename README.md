@@ -15,17 +15,6 @@ A leak-proof pipeline that flags employees at risk of leaving, so HR can act ear
 
 ---
 
-## ⚙️ Installation
-```bash
-git clone https://github.com/yourusername/employee-attrition-ml.git
-cd employee-attrition-ml
-python -m venv venv                # create venv
-# macOS / Linux
-source venv/bin/activate
-# Windows
-venv\Scripts\activate.bat
-pip install -r requirements.txt
-
 🚀 Usage
 	1.	Place dataset.csv in the project root.
 	2.	Launch Jupyter Lab
