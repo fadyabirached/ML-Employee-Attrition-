@@ -1,4 +1,4 @@
-# **Predicting Employee Attrition Using Machine Learning**
+# **Predicting Employee Attrition Using Machine Learning (Curricular Project)**
 
 A leak-proof pipeline that flags employees at risk of leaving, so HR can act early and cut turnover costs.
 
