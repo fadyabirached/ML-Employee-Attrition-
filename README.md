@@ -17,9 +17,9 @@ A leak-proof pipeline that flags employees at risk of leaving, so HR can act ear
 
 🚀 Usage
 
-	1.	Place dataset.csv in the project root.
-	2.	Launch Jupyter Lab
-	3.	Open attrition_model.ipynb and run every cell top-to-bottom.
+1. Place dataset.csv in the project root.
+2.  Launch Jupyter Lab
+3. Open attrition_model.ipynb and run every cell top-to-bottom.
 
 🗂️ Project Structure
 
