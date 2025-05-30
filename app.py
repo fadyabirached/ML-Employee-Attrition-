@@ -45,12 +45,10 @@ if st.button("Predict"):
     }
 
     row = pd.DataFrame([row_dict])
-
-    # 🔥 Ensure categorical types are strings
+    
     row["Department"] = row["Department"].astype(str)
     row["salary"] = row["salary"].astype(str)
 
-    # 🔄 Reorder columns to match training features
     row = row.reindex(columns=feat_cols)
 
     try:
