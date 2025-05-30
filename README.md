@@ -35,7 +35,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 ![Screenshot 2025-05-30 143849](https://github.com/user-attachments/assets/a63b32a7-b119-4b66-83fb-01a4047f69f1)
-![Screenshot 2025-05-30 143903](https://github.com/user-attachments/assets/fa49f7c9-744a-4fd5-b214-fe2f1399b68c)
+![Screenshot 2025-05-30 143903](https://github.com/user-attachments/assets/578236a9-ae83-4b15-b8ef-dd9f4232dd89)
 
 🔑 Key Steps
 
