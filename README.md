@@ -1,4 +1,4 @@
-# **Employee Attrition Using Machine Learning (Curricular Project)**
+# **Employee Attrition Using Machine Learning**
 
 A leak-proof pipeline that flags employees at risk of leaving, so HR can act early and cut turnover costs.
 
@@ -19,19 +19,26 @@ Every detail about the work is documented in the notebook.
 
 ---
 
-🚀 Usage
+## 🚀 How to Use
 
-1. Place dataset.csv in the project root.
-2. Launch Jupyter Lab
-3. Open attrition_model.ipynb and run every cell top-to-bottom.
+### 🧠 Run the Web App
 
-🗂️ Project Structure
+```bash
+# 1. Create and activate a virtual environment (optional but recommended)
+python -m venv .venv
+.\.venv\Scripts\activate   # On Windows
 
-employee-attrition-ml/
-├── dataset.csv
-└── attrition_model.ipynb
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch the Streamlit app
+streamlit run app.py
+```
+![Screenshot 2025-05-30 143849](https://github.com/user-attachments/assets/a63b32a7-b119-4b66-83fb-01a4047f69f1)
+![Screenshot 2025-05-30 143903](https://github.com/user-attachments/assets/578236a9-ae83-4b15-b8ef-dd9f4232dd89)
 
 🔑 Key Steps
+
 1.	EDA – histograms, boxplots, count plots ⇒ class imbalance ≈ 24 % “Left”.
 2.	Pre-processing
 •	Stratified 70 / 20 / 10 split (train / val / test)
@@ -60,4 +67,3 @@ Accuracy	0.993
 📝 License
 
 MIT © Fady Abi Rached
-
