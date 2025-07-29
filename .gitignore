@@ -1,0 +1,11 @@
+# Ignore virtual environments
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore large model backups
+*.h5
+*.ckpt
+
+# Optional: ignore dataset
+dataset.csv
