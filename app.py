@@ -1,6 +1,7 @@
 import joblib
 import pandas as pd
 import streamlit as st
+import time
 
 # ── Load model bundle ────────────────────────────────────────────────────────
 bundle      = joblib.load("employee_attrition_rf.pkl")
@@ -45,21 +46,33 @@ if st.button("Predict"):
     }
 
     row = pd.DataFrame([row_dict])
-    
+
+    # Ensure correct dtypes
     row["Department"] = row["Department"].astype(str)
     row["salary"] = row["salary"].astype(str)
 
+    # Match training feature order
     row = row.reindex(columns=feat_cols)
 
     try:
-        prob_leave = model.predict_proba(row)[:, 1][0]
+        # Optional warm-up (avoids first-call overhead in timing)
+        _ = model.predict_proba(row)
+
+        # Measure inference latency
+        start = time.perf_counter()
+        prob_leave = float(model.predict_proba(row)[:, 1][0])
+        lat_ms = (time.perf_counter() - start) * 1000
+
         will_leave = int(prob_leave >= best_thr)
 
         st.write(f"**Probability of leaving:** {prob_leave:.1%}")
+        st.caption(f"Inference latency (CPU, batch=1): {lat_ms:.2f} ms")
+
         if will_leave:
             st.error("⚠️  High risk - likely to leave.")
         else:
             st.success("👍  Low risk - likely to stay.")
+
     except Exception as e:
         st.error(f"Prediction failed: {e}")
         st.write("Debug info:")
