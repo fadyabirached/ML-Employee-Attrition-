@@ -7,5 +7,10 @@ __pycache__/
 *.h5
 *.ckpt
 
+# Trained model artifact: regenerate with `python train.py`, or let app.py /
+# api.py train a fresh one on first run (see model_service.py) -- a 50MB+
+# binary doesn't belong in git history
+employee_attrition_model.pkl
+
 # Optional: ignore dataset
 dataset.csv
